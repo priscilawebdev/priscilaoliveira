@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "diagnostics": true,
+        "moduleResolution": "node",
+        "esModuleInterop": true,
+        "noImplicitAny": true,
+        "allowSyntheticDefaultImports": true,
+        "allowJs": false,
+        "checkJs": false,
+        "strict": true,
+        "noEmit": true,
+        // targets latest supported ES proposed features.
+        "target": "esnext",
+        "module": "commonjs",
+        "jsx": "react",
+        "sourceMap": true,
+        "baseUrl": "."
+    },
+    "exclude": [
+      "node_modules",
+      ".cache",
+      "public"
+    ]
+}

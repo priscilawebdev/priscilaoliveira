@@ -1,0 +1,33 @@
+{
+  "name": "priscilaoliveira",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "'n/a'",
+  "author": "Priscila Oliveira",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "gatsby": "^2.15.34",
+    "gatsby-plugin-react-helmet": "^3.1.11",
+    "react": "^16.10.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "^2.3.3",
+    "eslint": "^6.5.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react-hooks": "^2.1.2",
+    "gatsby-plugin-typescript": "^2.1.12",
+    "prettier": "^1.18.2",
+    "typescript": "^3.6.4"
+  },
+  "scripts": {
+    "start": "gatsby develop",
+    "develop": "gatsby develop",
+    "build": "gatsby build",
+    "type-check": "tsc --noEmit --pretty"
+  }
+}

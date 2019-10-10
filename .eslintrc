@@ -1,0 +1,14 @@
+{
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/typescript"
+  ],
+  "plugins": ["react", "prettier", "react-hooks", "import"],
+  "parser": "@typescript-eslint/parser",
+  "rules": {
+    "import/order": ["error", { "newlines-between": "always" }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "prettier/prettier": "error"
+  }
+}
