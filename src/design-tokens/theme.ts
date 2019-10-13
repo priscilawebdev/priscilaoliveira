@@ -1,13 +1,33 @@
 import { createMuiTheme } from '@material-ui/core/styles'
-import purple from '@material-ui/core/colors/purple'
-import green from '@material-ui/core/colors/green'
+
+declare module '@material-ui/core/styles/createPalette' {
+  interface Palette {
+    lightGray: string
+  }
+  interface PaletteOptions {
+    lightGray?: string
+  }
+}
+
+const colors = {
+  primary: '#ff4a5a',
+  secondary: '#624de3',
+  text: '#00234b',
+  lightGray: '#f5f6f8',
+}
+
+type Colors = keyof typeof colors
 
 const theme = createMuiTheme({
   palette: {
-    primary: purple,
-    secondary: green,
+    ...colors,
+    primary: { main: colors.primary },
+    secondary: { main: colors.secondary },
+    text: { primary: colors.text },
   },
 })
 
+type Theme = typeof theme
+
 export default theme
-export type Theme = typeof theme
+export { Colors, Theme }
