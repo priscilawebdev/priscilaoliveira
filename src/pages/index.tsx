@@ -1,16 +1,16 @@
 import React from 'react'
-import styled from 'styled-components'
-import StyleBaseline from '../design-tokens/StyleBaseline'
 
-const Layout = styled('div')`
-  background-color: papayawhip;
-  height: 100%;
-`
+import StyleBaseline from '../design-tokens/StyleBaseline'
+import StylesProvider from '../design-tokens/StylesProvider'
+
+import Layout from '../components/Layout'
 
 export default () => (
-  <StyleBaseline>
-    <Layout>
-      <h1>Hi Priscila</h1>
-    </Layout>
-  </StyleBaseline>
+  <StylesProvider>
+    <StyleBaseline>
+      <Layout>
+        <h1>Hi Priscila</h1>
+      </Layout>
+    </StyleBaseline>
+  </StylesProvider>
 )
