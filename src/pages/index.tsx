@@ -13,6 +13,7 @@ export default () => (
     <StyleBaseline>
       <Layout>
         <h1>Hi Priscila</h1>
+        <button onClick={methodDoesNotExist}>Break the world</button>
       </Layout>
     </StyleBaseline>
   </StylesProvider>
