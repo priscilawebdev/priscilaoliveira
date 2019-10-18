@@ -995,7 +995,7 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@sentry/browser@^5.7.1":
+"@sentry/browser@latest":
   version "5.7.1"
   resolved "https://registry.verdaccio.org/@sentry%2fbrowser/-/browser-5.7.1.tgz#1f8435e2a325d7a09f830065ebce40a2b3c708a4"
   integrity sha512-K0x1XhsHS8PPdtlVOLrKZyYvi5Vexs9WApdd214bO6KaGF296gJvH1mG8XOY0+7aA5i2A7T3ttcaJNDYS49lzw==
@@ -4779,6 +4779,13 @@ gatsby-plugin-react-helmet@^3.1.11:
   integrity sha512-obVj6fzH0Hr6UdmQGaIYz29a1+h89pI+vKgIb2MwXCCDESCYgVYTcDmtBzYTZVLXupW6fqGlybFQwUKxEI0ZAQ==
   dependencies:
     "@babel/runtime" "^7.6.3"
+
+gatsby-plugin-sentry@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.verdaccio.org/gatsby-plugin-sentry/-/gatsby-plugin-sentry-1.0.1.tgz#d146e3851488c9545f2c0689cad62bf6e7d1c653"
+  integrity sha512-rKIngbFbBwwGYJi1ayUtEz34tXxpLXvSMD3WWVmdtXs0wrYrlGs30nFJ4JJIxcA7fWtx3hQ2yd5O2ZyQ832G2g==
+  dependencies:
+    "@sentry/browser" latest
 
 gatsby-plugin-styled-components@^3.1.9:
   version "3.1.9"
