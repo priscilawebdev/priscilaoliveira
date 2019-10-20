@@ -12,7 +12,7 @@ declare module '@material-ui/core/styles/createPalette' {
 const colors = {
   primary: '#ff4a5a',
   secondary: '#624de3',
-  text: '#00234b',
+  text: '#0a0a14',
   lightGray: '#f5f6f8',
 }
 
