@@ -5,6 +5,10 @@ import { Theme } from '../design-tokens/theme'
 
 const Container = styled('div')`
   background-color: ${({ theme }: { theme: Theme }) => theme.palette.lightGray};
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
   height: 100%;
 `
 
