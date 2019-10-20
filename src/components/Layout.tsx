@@ -8,37 +8,38 @@ import StylesProvider from '../design-tokens/StylesProvider'
 import { Theme } from '../design-tokens/theme'
 
 import Header from './Header'
+import Footer from './Footer'
 
 Sentry.init({ dsn: 'https://7d6236da009e4951a98980581bc55e78@sentry.io/1783802' })
 
-const Container = styled('div')`
-  background-color: ${({ theme }: { theme: Theme }) => theme.palette.lightGray};
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-`
+// @ts-ignore FIXME - position: string;  is not assignable to type
+const StyledBoxContainer = styled(Box)(({ theme }: { theme: Theme }) => ({
+  backgroundColor: theme.palette.lightGray,
+  position: 'absolute',
+  top: 0,
+  left: 0,
+  width: '100%',
+  height: '100%',
+}))
 
-const Content = styled(Box)`
-  margin: 40px auto 0;
-  maxwidth: 100%;
-  ${({ theme }: { theme: Theme }) => {
-    return {
-      [theme.breakpoints.up('sm')]: {
-        maxWidth: 700,
-      },
-    }
-  }};
-`
+const StyledBoxContent = styled(Box)(({ theme }: { theme: Theme }) => ({
+  margin: '40px 20px',
+  [theme.breakpoints.up('sm')]: {
+    maxWidth: 700,
+    margin: '40px auto',
+  },
+}))
 
 const Layout: React.FC = ({ children }) => (
   <StylesProvider>
     <StyleBaseline>
-      <Container>
+      <StyledBoxContainer display="flex" flexDirection="column">
         <Header />
-        <Content>{children}</Content>
-      </Container>
+        <StyledBoxContent component="main" flexGrow={1}>
+          {children}
+        </StyledBoxContent>
+        <Footer />
+      </StyledBoxContainer>
     </StyleBaseline>
   </StylesProvider>
 )

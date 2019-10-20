@@ -1,58 +1,49 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Box from '@material-ui/core/Box'
 import styled from 'styled-components'
 
 import { Theme } from '../design-tokens/theme'
 
+import Link from './Link'
+
 enum Route {
   HOME = '/',
-  ABOUT = '/about',
-  WRITING = '/writing',
-  CONTACT = '/contact',
+  BLOG = '/blog',
 }
 
-const StyledContainer = styled(Box)`
-  height: 80px;
-  margin-top: 30px;
-  padding: 0 40px;
-  ${({ theme }: { theme: Theme }) => {
-    return {
-      [theme.breakpoints.up('sm')]: {
-        flexDirection: 'row',
-        marginTop: 0,
-      },
-    }
-  }}
-`
+// @ts-ignore FIXME - flexDirection: string;  is not assignable to type
+const StyledContainer = styled(Box)(({ theme }: { theme: Theme }) => ({
+  height: 80,
+  marginTop: 30,
+  paddingRight: 40,
+  paddingLeft: 40,
+  [theme.breakpoints.up('sm')]: {
+    flexDirection: 'row',
+    marginTop: 0,
+  },
+}))
 
-const StyledLink = styled(Link)`
-  font-size: 18px;
-  padding-right: 1.56rem;
-  color: ${({ theme }: { theme: Theme }) => theme.palette.text.primary};
-  :hover {
-    color: ${({ theme }: { theme: Theme }) => theme.palette.primary.main};
-  }
-  :last-child {
-    padding-right: 0;
-  }
-`
-
-const StyledLinkPriscilaOliveira = styled(StyledLink)`
-  flex-grow: 1;
-  font-size: 24px;
-  color: ${({ theme }: { theme: Theme }) => theme.palette.primary.main};
-`
+const StyledNav = styled(Box)(() => ({
+  '> *': {
+    paddingRight: '1.56rem',
+  },
+  '> *:last-child': {
+    paddingRight: 0,
+  },
+}))
 
 const Header: React.FC = () => (
-  <StyledContainer display="flex" flexDirection="column" alignItems="center" width="100%">
-    <StyledLinkPriscilaOliveira to={Route.HOME}>Priscila Oliveira</StyledLinkPriscilaOliveira>
-    <Box component="nav" display="flex" alignItems="center">
-      <StyledLink to={Route.HOME}>Home</StyledLink>
-      <StyledLink to={Route.ABOUT}>About</StyledLink>
-      <StyledLink to={Route.WRITING}>Writing</StyledLink>
-      <StyledLink to={Route.CONTACT}>Contact</StyledLink>
+  <StyledContainer component="header" display="flex" flexDirection="column" alignItems="center" width="100%">
+    <Box display="flex" flexGrow={1}>
+      <Link to={Route.HOME} variant="big" color="primary" hoverColor="primary">
+        Priscila Oliveira
+      </Link>
     </Box>
+    <StyledNav component="nav" display="flex" alignItems="center">
+      <Link to={Route.HOME} variant="medium" hoverColor="primary">
+        Home
+      </Link>
+    </StyledNav>
   </StyledContainer>
 )
 
