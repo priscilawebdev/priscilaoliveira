@@ -7,7 +7,6 @@ import StyleBaseline from '../design-tokens/StyleBaseline'
 import StylesProvider from '../design-tokens/StylesProvider'
 import { Theme } from '../design-tokens/theme'
 
-import Header from './Header'
 import Footer from './Footer'
 
 Sentry.init({ dsn: 'https://7d6236da009e4951a98980581bc55e78@sentry.io/1783802' })
@@ -37,7 +36,6 @@ const Layout: React.FC = ({ children }) => (
   <StylesProvider>
     <StyleBaseline>
       <StyledBoxContainer display="flex" flexDirection="column">
-        <Header />
         <StyledBoxContent component="main" flexGrow={1}>
           {children}
         </StyledBoxContent>

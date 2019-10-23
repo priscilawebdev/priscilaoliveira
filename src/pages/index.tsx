@@ -29,14 +29,15 @@ const StyledRole = styled('span')({
 export default () => (
   <Layout>
     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
+      <Heading color="primary" variant="h1" size="large">
+        Priscila Oliveira
+      </Heading>
       <StyledAvatar alt="Priscila Oliveira" src={priscilaOliveiraAvatar} />
-      <>
-        <StyledHeadingWhoAmI variant="h6" align="center" size="large">
-          Hi, I'm Priscila, a brazilian
-          <StyledRole>Front-End Enginner</StyledRole>
-          based in the inspiring Vienna - Austria.
-        </StyledHeadingWhoAmI>
-      </>
+      <StyledHeadingWhoAmI variant="h6" align="center" size="large">
+        Hi, I'm Priscila, a brazilian
+        <StyledRole>Front-End Enginner</StyledRole>
+        based in the inspiring Vienna - Austria.
+      </StyledHeadingWhoAmI>
     </Box>
   </Layout>
 )
