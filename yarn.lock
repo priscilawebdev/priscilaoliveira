@@ -1150,6 +1150,13 @@
     "@types/history" "*"
     "@types/react" "*"
 
+"@types/react-helmet@^5.0.13":
+  version "5.0.13"
+  resolved "https://registry.verdaccio.org/@types%2freact-helmet/-/react-helmet-5.0.13.tgz#ccda7effa4fbd67d92321c856db504c1a206cb44"
+  integrity sha512-YvdsLKH9FGAAhoQvjYAyhBo/qpYrY5glpAf6og+0batlGyub6YHAawHx/cfw0rdOxjVPZMNhDC+xNmYnWM7EYQ==
+  dependencies:
+    "@types/react" "*"
+
 "@types/react-native@*":
   version "0.60.19"
   resolved "https://registry.verdaccio.org/@types%2freact-native/-/react-native-0.60.19.tgz#4d58516f9e981c3f477ad48727331e31a0792aae"
@@ -4827,13 +4834,6 @@ gatsby-plugin-page-creator@^2.1.25:
     glob "^7.1.4"
     lodash "^4.17.15"
     micromatch "^3.1.10"
-
-gatsby-plugin-react-helmet@^3.1.11:
-  version "3.1.11"
-  resolved "https://registry.verdaccio.org/gatsby-plugin-react-helmet/-/gatsby-plugin-react-helmet-3.1.11.tgz#14150138c5eb641023ca3de98d822a4cc9b137d9"
-  integrity sha512-obVj6fzH0Hr6UdmQGaIYz29a1+h89pI+vKgIb2MwXCCDESCYgVYTcDmtBzYTZVLXupW6fqGlybFQwUKxEI0ZAQ==
-  dependencies:
-    "@babel/runtime" "^7.6.3"
 
 gatsby-plugin-sentry@^1.0.1:
   version "1.0.1"

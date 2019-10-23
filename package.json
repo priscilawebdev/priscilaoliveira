@@ -11,7 +11,6 @@
     "@material-ui/icons": "^4.5.1",
     "gatsby": "^2.15.34",
     "gatsby-plugin-material-ui": "^2.0.0-beta.2",
-    "gatsby-plugin-react-helmet": "^3.1.11",
     "gatsby-plugin-sentry": "^1.0.1",
     "gatsby-plugin-styled-components": "^3.1.9",
     "gatsby-plugin-typescript": "^2.1.12",
@@ -21,6 +20,7 @@
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
+    "@types/react-helmet": "^5.0.13",
     "@types/styled-components": "^4.1.19",
     "@typescript-eslint/parser": "^2.3.3",
     "babel-plugin-styled-components": "^1.10.6",

@@ -8,6 +8,7 @@ import StylesProvider from '../design-tokens/StylesProvider'
 import { Theme } from '../design-tokens/theme'
 
 import Footer from './Footer'
+import Favicon from './Favicon'
 
 Sentry.init({ dsn: 'https://7d6236da009e4951a98980581bc55e78@sentry.io/1783802' })
 
@@ -40,6 +41,7 @@ const Layout: React.FC = ({ children }) => (
           {children}
         </StyledBoxContent>
         <Footer />
+        <Favicon />
       </StyledBoxContainer>
     </StyleBaseline>
   </StylesProvider>
