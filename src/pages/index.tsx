@@ -6,7 +6,7 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Heading from '../components/Heading'
 
-import priscilaOliveiraAvatar from '../assets/priscila-oliveira.jpg'
+import priscilaOliveiraAvatar from '../assets/pri-oliveira-avatar.jpg'
 
 const StyledAvatar = styled(Avatar)(() => ({
   width: 250,
