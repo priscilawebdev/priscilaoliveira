@@ -25,7 +25,7 @@ const StyledBoxContent = styled(Box)(({ theme }: { theme: Theme }) => ({
   marginLeft: 20,
   paddingTop: 40,
   paddingBottom: 40,
-  [theme.breakpoints.up('sm')]: {
+  [theme.breakpoints.up('md')]: {
     maxWidth: 840,
     marginRight: 'auto',
     marginLeft: 'auto',
@@ -36,7 +36,7 @@ const Layout: React.FC = ({ children }) => (
   <StylesProvider>
     <StyleBaseline>
       <StyledBoxContainer display="flex" flexDirection="column">
-        <StyledBoxContent component="main" flexGrow={1}>
+        <StyledBoxContent component="main" display="flex" flexDirection="column" justifyContent="center" flexGrow={1}>
           {children}
         </StyledBoxContent>
         <Footer />

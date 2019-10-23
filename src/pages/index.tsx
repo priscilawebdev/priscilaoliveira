@@ -1,12 +1,10 @@
 import React from 'react'
 import Avatar from '@material-ui/core/Avatar'
-import Typography from '@material-ui/core/Typography'
 import Box from '@material-ui/core/Box'
 import styled from 'styled-components'
 
 import Layout from '../components/Layout'
 import Heading from '../components/Heading'
-import Text from '../components/Text'
 
 import priscilaOliveiraAvatar from '../assets/priscila-oliveira.jpg'
 
@@ -15,6 +13,11 @@ const StyledAvatar = styled(Avatar)(() => ({
   height: 250,
   marginBottom: 15,
 }))
+
+const StyledHeadingName = styled(Heading)({
+  marginBottom: 25,
+  textAlign: 'center',
+})
 
 const StyledHeadingWhoAmI = styled(Heading)({
   marginBottom: 20,
@@ -29,9 +32,9 @@ const StyledRole = styled('span')({
 export default () => (
   <Layout>
     <Box display="flex" flexDirection="column" alignItems="center" justifyContent="center">
-      <Heading color="primary" variant="h1" size="large">
+      <StyledHeadingName color="primary" variant="h1" size="x-large">
         Priscila Oliveira
-      </Heading>
+      </StyledHeadingName>
       <StyledAvatar alt="Priscila Oliveira" src={priscilaOliveiraAvatar} />
       <StyledHeadingWhoAmI variant="h6" align="center" size="large">
         Hi, I'm Priscila, a brazilian

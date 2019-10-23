@@ -23,6 +23,10 @@ const sizeVariants = {
     fontSize: '2.188em',
     lineHeight: '3rem',
   },
+  'x-large': {
+    fontSize: '3rem',
+    lineHeight: '4rem',
+  },
 }
 type SizeType = keyof typeof sizeVariants
 

@@ -23,14 +23,14 @@ const StyledContainer = styled(Box)(({ theme }: { theme: Theme }) => ({
   },
 }))
 
-const StyledNav = styled(Box)(() => ({
+const StyledNav = styled(Box)({
   '> *': {
     paddingRight: '1.56rem',
   },
   '> *:last-child': {
     paddingRight: 0,
   },
-}))
+})
 
 const Header: React.FC = () => (
   <StyledContainer component="header" display="flex" flexDirection="column" alignItems="center" width="100%">

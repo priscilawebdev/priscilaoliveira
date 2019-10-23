@@ -3,8 +3,6 @@ import Box from '@material-ui/core/Box'
 import Divider from '@material-ui/core/Divider'
 import styled from 'styled-components'
 
-import { Theme } from '../../design-tokens/theme'
-
 import Link from '../../components/Link'
 import Text from '../../components/Text'
 
@@ -12,7 +10,10 @@ import FooterSocialNetwork from './FooterSocialNetwork'
 
 const StyledContainer = styled(Box)({
   position: 'relative',
-  padding: '25px 40px',
+  paddingLeft: 40,
+  paddingRight: 40,
+  paddingTop: 25,
+  paddingBottom: 25,
   '> *': {
     marginBottom: 15,
   },
@@ -21,13 +22,12 @@ const StyledContainer = styled(Box)({
   },
 })
 
-// @ts-ignore FIXME - position: string;  is not assignable to type
-const StyledDivider = styled(Divider)(({ theme }: { theme: Theme }) => ({
+const StyledDivider = styled(Divider)({
   width: '100%',
   left: 0,
   top: 0,
   position: 'absolute',
-}))
+})
 
 const Footer: React.FC = () => (
   <StyledContainer
