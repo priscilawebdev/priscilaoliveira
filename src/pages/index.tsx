@@ -38,7 +38,7 @@ export default () => (
       <StyledAvatar alt="Priscila Oliveira" src={priscilaOliveiraAvatar} />
       <StyledHeadingWhoAmI variant="h6" align="center" size="large">
         Hi, I'm Priscila, a brazilian
-        <StyledRole>Front-End Enginner</StyledRole>
+        <StyledRole>Front-End Engineer</StyledRole>
         based in the inspiring Vienna - Austria.
       </StyledHeadingWhoAmI>
     </Box>
