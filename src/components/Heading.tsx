@@ -20,7 +20,7 @@ const sizeVariants = {
     lineHeight: '1.75rem',
   },
   large: {
-    fontSize: '2rem',
+    fontSize: '2.188em',
     lineHeight: '3rem',
   },
 }
@@ -43,13 +43,14 @@ const StyledMaterialUITypography = styled((props: Props) => (
   <MaterialUITypography {...filterProps(props, 'fontWeight')} />
 ))(({ fontWeight, size }: { fontWeight: FontWeightType; size: SizeType }) => ({
   fontWeight: fontWeightVariants[fontWeight],
-  ...[sizeVariants[size]],
+  ...sizeVariants[size],
 }))
 
 const Heading = forwardRef<HeadingRef, Props>(function Heading(
   { variant = 'h6', fontWeight = 'normal', size = 'default', ...props },
   ref,
 ) {
+  console.log('size', sizeVariants[size])
   return <StyledMaterialUITypography {...props} variant={variant} fontWeight={fontWeight} size={size} ref={ref} />
 })
 
