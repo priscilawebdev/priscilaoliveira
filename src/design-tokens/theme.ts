@@ -26,6 +26,9 @@ const theme = createMuiTheme({
     secondary: { main: colors.secondary },
     text: { primary: colors.text },
   },
+  typography: {
+    fontFamily: 'inherit',
+  },
 })
 
 type Theme = typeof theme
