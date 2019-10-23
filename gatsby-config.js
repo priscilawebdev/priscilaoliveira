@@ -23,4 +23,5 @@ module.exports = {
   siteMetadata: {
     title: 'Priscila Oliveira',
   },
+  pathPrefix: '/priscilaoliveira',
 }
