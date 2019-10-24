@@ -6,13 +6,11 @@ import styled from 'styled-components'
 import Layout from '../components/Layout'
 import Heading from '../components/Heading'
 
-import priscilaOliveiraAvatar from '../assets/pri-oliveira-avatar.jpg'
-
-const StyledAvatar = styled(Avatar)(() => ({
+const StyledAvatar = styled(Avatar)({
   width: 250,
   height: 250,
   marginBottom: 15,
-}))
+})
 
 const StyledHeadingName = styled(Heading)({
   marginBottom: 25,
@@ -35,7 +33,7 @@ export default () => (
       <StyledHeadingName color="primary" variant="h1" size="x-large">
         Priscila Oliveira
       </StyledHeadingName>
-      <StyledAvatar alt="Priscila Oliveira" src={priscilaOliveiraAvatar} />
+      <StyledAvatar alt="Priscila Oliveira" src="./pri-oliveira-avatar.jpg" />
       <StyledHeadingWhoAmI variant="h6" align="center" size="large">
         Hi, I'm Priscila, a brazilian
         <StyledRole>Front-End Engineer</StyledRole>
