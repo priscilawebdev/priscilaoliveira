@@ -43,7 +43,7 @@ const Footer: React.FC = () => (
     </Text>
     <Text>Feel free to reach out for collaborations or just a friendly hello 😉</Text>
     <FooterSocialNetwork />
-    <Link to="mailto:priscilawebdev@gmail.com" external>
+    <Link to="mailto:priscilawebdev@gmail.com" hoverColor="primary" external>
       priscilawebdev@gmail.com
     </Link>
   </StyledContainer>

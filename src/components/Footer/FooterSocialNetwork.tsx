@@ -11,16 +11,16 @@ import Link from '../../components/Link'
 
 const FooterSocialNetwork: React.FC = () => (
   <Box display="flex" justifyContent="space-between" width="100%" maxWidth="250px">
-    <Link to="https://twitter.com/priscilawebdev" external>
+    <Link to="https://twitter.com/priscilawebdev" hoverColor="primary" external>
       <Twitter />
     </Link>
-    <Link to="https://github.com/priscilawebdev" external>
+    <Link to="https://github.com/priscilawebdev" hoverColor="primary" external>
       <GitHub />
     </Link>
-    <Link to="https://www.instagram.com/oliveira.priii/" external>
+    <Link to="https://www.instagram.com/oliveira.priii/" hoverColor="primary" external>
       <Instagram />
     </Link>
-    <Link to="https://www.linkedin.com/in/priscilawebdev/" external>
+    <Link to="https://www.linkedin.com/in/priscilawebdev/" hoverColor="primary" external>
       <LinkedIn />
     </Link>
   </Box>
