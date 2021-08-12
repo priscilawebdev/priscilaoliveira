@@ -29,6 +29,7 @@ const StyledDivider = styled(Divider)({
   position: 'absolute',
 })
 
+// THIS IS A FIX
 const Footer: React.FC = () => (
   <StyledContainer
     component="footer"
