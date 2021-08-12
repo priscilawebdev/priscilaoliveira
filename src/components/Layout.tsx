@@ -32,7 +32,7 @@ const StyledBoxContent = styled(Box)(({ theme }: { theme: Theme }) => ({
     marginLeft: 'auto',
   },
 }))
-
+// THIS IS A FIX
 const Layout: React.FC = ({ children }) => (
   <StylesProvider>
     <StyleBaseline>
