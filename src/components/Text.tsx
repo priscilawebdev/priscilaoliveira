@@ -26,6 +26,7 @@ export interface TextProps extends Omit<TypographyProps, 'variant' | 'color'> {
   variant?: Variant
 }
 
+// THIS IS A FIX
 const StyledMUITypography = styled((props: TextProps) => (
   <MUITypography {...filterProps(props, 'variant', 'color', 'hoverColor')} />
 ))(({ variant, color, hoverColor, theme }: { variant?: Variant; color?: Color; hoverColor?: Color; theme: Theme }) => ({
