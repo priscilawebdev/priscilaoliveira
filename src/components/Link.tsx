@@ -8,6 +8,7 @@ interface Props extends Pick<TextProps, 'color' | 'hoverColor' | 'variant'> {
   to: string
 }
 
+// THIS IS A FIX
 const Link: React.FC<Props> = ({ external, to, children, color, hoverColor, variant, ...props }) => {
   const LinkTextContent = (
     <Text color={color} variant={variant} hoverColor={hoverColor}>
