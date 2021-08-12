@@ -40,6 +40,7 @@ interface Props extends Omit<TypographyProps, 'variant'> {
   size?: SizeType
 }
 
+// THIS IS A FIX
 const StyledMaterialUITypography = styled((props: Props) => (
   <MaterialUITypography {...filterProps(props, 'fontWeight')} />
 ))(({ fontWeight, size }: { fontWeight: FontWeightType; size: SizeType }) => ({
