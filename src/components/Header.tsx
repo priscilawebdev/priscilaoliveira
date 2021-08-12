@@ -32,6 +32,7 @@ const StyledNav = styled(Box)({
   },
 })
 
+// THIS IS A FIX
 const Header: React.FC = () => (
   <StyledContainer component="header" display="flex" flexDirection="column" alignItems="center" width="100%">
     <Box display="flex" flexGrow={1}>
